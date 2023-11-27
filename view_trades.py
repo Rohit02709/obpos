@@ -2,6 +2,9 @@ import requests
 import streamlit as st
 import pandas as pd
 from decimal import Decimal
+st.set_page_config(layout="wide")
+
+st.title("Option Buying Positional Trades")
 
 URL=r'https://7z3vkun3jxdpyai7ludlptbzdq0ccori.lambda-url.ap-south-1.on.aws/'
 resp=requests.get(URL,json={'operation':'scan_orders'})
